@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+    <title>Dungeons and Dragons</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header class="nav">
+        
+        <div class="nav">
+            <img class="logo" src="img/logo.png" alt="">
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Distribuidor de pontos</a>
+        </div>
+    </header>
+    <main>
+
+        <section class="robotron">
+            <div class="dragon"></div>
+            <img class="robo" src="img/caracter.png" alt="Robotron">
+            <figcaption class="titulo">Dungeons & Dragons</figcaption>
+        </section>
+
+        <section class="box estatisticas grid">
+            <h2>Modificadores </h2>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Força</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="força">-1</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Destreza</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="destreza">-1</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Constituição</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="constituicao">-1</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Sabedoria</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="sabedoria">-1</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Inteligencia</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="inteligencia">-1</p>
+                </div>
+            </div>
+            <div class="estatistica">
+                <p class="estatistica-titulo">Carisma</p>
+                <div class="estatistica-valor">
+                    <p class="estatistica-numero" data-estatistica="carisma">-1</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipamentos">
+            <form action="" class="montador">
+                
+                <div class="box montador-conteudo">
+                    <h2>Atributos</h2>
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Força</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="força" data-forca>-</buttom>
+                            <input type="text" class="controle-contador" data-contador value="8">
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="força">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Destreza</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="destreza" data-destreza >-</buttom>
+                            <input type="text" class="controle-contador" data-contador value="8" >
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="destreza">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">constituição</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="constituição">-</buttom>
+                            <input type="text" class="controle-contador" data-contador value="8">
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="constituição">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Sabedoria</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="sabedoria">-</buttom>
+                            <input type="text" class="controle-contador" data-contador value="8">
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="sabedoria">+</buttom>
+                        </div>
+                    </div>              
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Inteligencia</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="inteligencia">-</buttom>
+                            <input type="text" class="controle-contador" data-contador value="8">
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="inteligencia">+</buttom>
+                        </div>
+                    </div>
+                    <hr class="linha">
+                    <div class="peca">
+                        <label for="" class="peca-titulo">Carisma</label>
+                        <div class="controle">
+                            <buttom class="controle-ajuste" data-controle="-" data-peca="carisma">-</buttom>
+                            <input type="text" class="controle-contador" data-contador value="8">
+                            <buttom class="controle-ajuste" data-controle="+" data-peca="carisma">+</buttom>
+                        </div>
+                    </div>                    
+                </div>       
+            </form>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

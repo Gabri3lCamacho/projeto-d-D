@@ -1,0 +1,271 @@
+:root {
+    --main-cinza: #e02929;
+    --main-branco: #FFFFFF;
+    --main-preto: #000000;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 2px  7px rgba(255, 0, 0, 0.5);
+    height: 3rem;
+    padding: 1rem;
+}
+
+.nav{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.logo{
+    height: 3rem;
+}
+
+a{
+    color: var(--main-branco);
+    font-weight: 500;
+    font-size: 1.5em;
+    padding: 0 .5em;
+}
+
+a:hover{
+    background-color: var(--main-cinza);
+    border-radius: 5px;
+}
+
+html{
+    background: url(../img/fundo.avif);
+    background-size: contain;
+    font-weight: 300;
+    width: 100vw;
+    min-height: 100%;
+}
+
+
+body, input {
+    font-family: 'Teko', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.robotron {
+    display: flex;
+}
+
+
+.titulo {
+    transform: rotate(180deg);
+    font-weight: 500;
+    font-size: 120px;
+    position: absolute;
+    bottom: 4rem;
+    left: 1rem;
+    line-height: 0.8;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: rgba(68, 2, 2, 0.8)
+}
+
+.box {
+    background: rgba(0,0,0,0.6);
+    clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
+    border-left: 5px solid var(--main-cinza);
+}
+
+/****************************** Equipamentos *****/
+
+h2{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.montador-conteudo {
+    padding: 1em;
+}
+
+.peca {
+    padding: .8em;
+}
+
+.peca-titulo {
+    color: var(--main-branco);
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+.controle {
+    background: var(--main-preto);
+    border-radius: 25px;
+    float: right;
+    display: inline-flex;
+    padding: 5px;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.controle-contador {
+    width: 40px;
+    height: 35px;
+    background: none;
+    border: 0;
+    margin: 0 1rem;
+    color: var(--main-branco);
+    text-align: center;
+    font-size: 2.5em;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.controle-ajuste {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 44px;
+    border-radius: 50%;
+    color: var(--main-cinza);
+    font-size: 4em;
+    background: var(--main-preto);
+    text-align: center;
+    border: 3px solid var(--main-cinza);
+    cursor: pointer;
+}
+
+.linha {
+    border-color: var(--main-cinza);
+}
+
+
+
+
+
+
+/****************************** Estatísticas *****/
+.estatisticas {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 2em 2em 0;
+    height: 100%;
+}
+
+.estatistica {
+    color: var(--main-branco);
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.estatistica-titulo {
+    font-size: 1.5em;
+    border-bottom: 1px solid var(--main-cinza);
+    flex-basis: 40%;
+    text-transform: uppercase;
+    order: 1
+}
+
+.estatistica-valor {
+    flex-basis: 30%;
+    position: relative;
+    margin: 10px 0 0;
+    order: 2;
+    margin: -10px 0 0;
+}
+
+.estatistica-valor::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    border: 1px solid var(--main-cinza);
+    border-radius: 50%;
+}
+
+.estatistica-numero {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-46%);
+    width: 100%;
+    line-height: 100%;
+    text-align: center;
+    font-size: 3em;
+    margin: 0;
+}
+
+.estatistica:nth-child(2n) .estatistica-titulo {
+    order: 2;
+    text-align: right;
+}
+
+.estatistica:nth-child(2n) .estatistica-valor {
+    order: 1;
+    flex-basis: 35%;
+    margin: 10px 0 0;
+}
+
+@media screen and (max-width: 1600px) {
+    body { 
+        font-size: 14px;
+    }
+    main {
+        width: 90vw;
+        height: 80vh;
+        margin: 5vh auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav{
+        gap: 1rem;
+        text-align: center;
+    }
+    body { 
+        font-size: 13px;
+    }
+
+    .titulo{
+        display: none;
+    }
+
+    
+    .robo{
+        width: 90%;
+        display: none;
+    }
+    
+    
+
+    main {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    
+    html{
+        height: 200vh;
+        background-size: cover;
+    }
+
+    .estatisticas{
+        width: 90%;
+        height: 130%;
+
+    }
+
+    .box{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
